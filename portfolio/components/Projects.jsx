@@ -4,8 +4,15 @@ import "../styles/project.css"
 import projectImg1 from "../assets/img/dQuora.png"
 import projectImg2 from "../assets/img/handtracking_mouse.png"
 import projectImg3 from "../assets/img/typing_tester.png"
+import projectImg4 from "../assets/img/NetVision2.png"
 function Projects() {
     const projects = [
+        {
+            title:'NetVision',
+            description:'Netflix UI Clone with Integrated ML Recommendations',
+            url:projectImg4,
+            link:"https://github.com/Shivansh-Raj/NetVision"
+        },
         {
             title:'Interactive Q&A Platform',
             description:'Full Stack web-development',
