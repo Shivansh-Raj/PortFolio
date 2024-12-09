@@ -3,7 +3,7 @@ Welcome to the repository for my personal portfolio! This project is a showcase 
 
 🖥️ Live Demo
 You can check out the live version of my portfolio here:
-My Portfolio [/https://197beb18-59c6-4007-818e-f9b18f2b5e1d.e1-us-cdp-2.choreoapps.dev/]
+My Portfolio {/https://197beb18-59c6-4007-818e-f9b18f2b5e1d.e1-us-cdp-2.choreoapps.dev/}
 
 📜 About
 This portfolio highlights:
