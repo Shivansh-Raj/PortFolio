@@ -11,11 +11,13 @@ import * as Icon from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import FaceImage from "../public/Images/FaceImage.jpg";
 import emailjs from 'emailjs-com';
+// import Logo1 from '../public/Images/Logo_1.jpg';
+// import Logo2 from '../public/Images/Logo_2.jpg';
 
 
 const logos = [
-  'Images/Logo_1.jpg',
-  'Images/Logo_2.jpg',
+  '/Images/Logo_1.jpg',
+  '/Images/Logo_2.jpg',
   'https://placehold.co/200?text=Logo+3',
   'https://placehold.co/200?text=Logo+4',
   'https://placehold.co/200?text=Logo+5',
@@ -566,7 +568,7 @@ export default function Home() {
           <div className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-2 px-3 bg-white/10 mobile-menu-bar sm:px-6 backdrop-blur-md xl:hidden">
             <div className="text-lg font-medium name">
               <a href="#" className="flex items-center gap-2 text-white">
-                <img src="/Images/S_Logo.png" alt="logo" width={32} height={32} />
+                <Image src="/Images/S_Logo.png" alt="logo" width={32} height={32} />
               </a>
             </div>
             <button
@@ -690,7 +692,7 @@ export default function Home() {
           <div className="minfo__nav__wrapper dark:bg-power__black text-[#acacac] font-normal dark:bg-power__black max-xl:hidden fixed top-1/2 -translate-y-1/2 right-4 2xl:right-14 z-999 flex items-center flex-col gap-4 border border-metalBlack rounded-[2rem] px-2.5 py-4">
             <div className="flex border rounded-full logo w-15 h-15 border-metalBlack flex items-center justify-center hover:bg-[#2f2f2f]">
               <a href="#">
-                <img src="/Images/S_Logo.png" alt="logo" width={32} height={32} />
+                <Image src="/Images/S_Logo.png" alt="logo" width={32} height={32} />
               </a>
             </div>
 
@@ -808,7 +810,7 @@ export default function Home() {
                     className="hero-image flex-[0_0_20.3rem] max-md:hidden"
                     variants={item}
                   >
-                    <img
+                    <Image
                       src="/Images/Home_Bg.jpg"
                       className="block"
                       alt="Hero Image - Dark Mode"
@@ -838,10 +840,13 @@ export default function Home() {
                                       flex justify-center items-center transition-all duration-300
                                       ${i === focusIndex ? 'scale-100 opacity-100' : 'scale-90 opacity-40'}`}
                         >
-                          <img
+                          <Image
+                            key = {i}
                             src={src}
                             alt={`Logo ${i}`}
                             className="w-full h-full object-cover"
+                            width={300}  
+                            height={200} 
                           />
                         </div>
                       ))}
@@ -1122,9 +1127,12 @@ export default function Home() {
                     <div key={project.id} className={`${project.id === 1 ? 'sm:col-span-2' : 'col-span-1'} group`}>
                       <a href={project.link} className="block p-3 overflow-hidden border md:p-4 rounded-xl border-greyBlack" target="_blank">
                         <div className="img-wrapper">
-                          <img 
+                          <Image 
                             src={project.image}
                             className={`rounded-lg w-full object-cover object-center transition-all duration-300 group-hover:blur-xs ${project.id === 1 ? 'h-[300px]' : 'h-[200px]'}`}
+                            alt={project.title || "Project image"} 
+                            width={300}  
+                            height={200} 
                           />
                           <div className="absolute inset-0 transition-all duration-300 opacity-0 overlay bg-gradient-to-t from-black to-transparent rounded-xl group-hover:opacity-100">
                           </div>
@@ -1182,7 +1190,7 @@ export default function Home() {
                       >
                         <div className="text-center slider-inner md:px-5">
                           <div className="image flex items-center justify-center">
-                            <img
+                            <Image
                               src={testimonial.image}
                               alt={testimonial.name}
                               width={80}
