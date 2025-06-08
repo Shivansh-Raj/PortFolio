@@ -17,12 +17,7 @@ import emailjs from 'emailjs-com';
 
 const logos = [
   '/Images/Logo_1.jpg',
-  '/Images/Logo_2.jpg',
-  'https://placehold.co/200?text=Logo+3',
-  'https://placehold.co/200?text=Logo+4',
-  'https://placehold.co/200?text=Logo+5',
-  'https://placehold.co/200?text=Logo+6',
-  'https://placehold.co/200?text=Logo+7',
+  '/Images/Logo_2.jpg'
 ];
 
 type ProgressCircleProps = {
@@ -628,7 +623,7 @@ export default function Home() {
               <a href="https://www.linkedin.com/in/shivanshrajdehl" className="text-white hover:text-[#00BC91] transition-colors" title="Share with LinkedIn" target="_blank">
                 <Icon.Linkedin size={20} />
               </a>
-              <a href="https://github.com/Shivansh-Raj/" className="text-white hover:text-[#00BC91] transition-colors" title="Share with GitHub" target="_blank">
+              <a href="https://github.com/Shivansh-Raj" className="text-white hover:text-[#00BC91] transition-colors" title="Share with GitHub" target="_blank">
                 <Icon.Github size={20} />
               </a>
               <a href="mailto:shivanshrajdehl@gmail.com" className="text-white hover:text-[#00BC91] transition-colors" title="Share with Gamil" target="_blank">
